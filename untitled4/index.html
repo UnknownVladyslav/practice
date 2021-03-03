@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" value="Fuck you asshole" class="input" id="input" readonly>
+<button class="button" id="button">Copy</button>
+</body>
+
+<script src="script.js"></script>
+
+<script type="text/javascript">
+    let text = document.getElementById('input')
+
+    let btn = document.getElementById('button')
+
+    btn.onclick = () => {
+        // console.log('clicked')
+        text.select()
+        document.execCommand('copy')
+        // console.log('copied')
+    }
+</script>
+</html>
